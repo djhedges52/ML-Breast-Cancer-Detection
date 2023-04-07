@@ -41,7 +41,7 @@ Above, you can see two example images from the [Kaggle dataset](https://www.kagg
 
 To create a model, I used a Keras and Tensorflow to create a Convolutional Neural Network (CNN). CNNs are composed of layers of neurons, the structure of which is inspired by the human brain. A neural networks are often used for computer vision and image classification because they can process large amounts of data, like the individual pixels of an image, and extract features from them, like lines and edges. Since CNNs can be computationally expensive to train, I added layers to an existing model through transfer learning. The model I used is VGG19, a popular model for image classification. 
 
-For my first successful model, I used binary crossentropy as the loss function and accuracy as the metric. As you can see below, the model did learn and improve, but only marginally.
+For my first successful model, I used binary crossentropy as the loss function and accuracy as the metric. As you can see below, the model did learn and improve, but only marginally. The model was submitted to the Kaggle competition where it is run on secret test data. The model recieved a score of 0, but it is unclear if there was a problem with the submission or if the model is at fault.
 
 ![training curves of first model, charts the model loss and model accuracy](Images/model1_results.png)
 
