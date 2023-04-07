@@ -1,4 +1,4 @@
-![white person in lab coat holding pink cancer awareness ribbon](Images/header image_ribbon.png)
+![white person in lab coat holding pink cancer awareness ribbon](Images/header_image_ribbon.png)
 
 # Predicting Breast Cancer Using Computer Vision
 #### An attempt to use machine learning to assist in diagnosing breast cancer from mammorgram scans
@@ -26,7 +26,7 @@ The data for this project was gathered from Kaggle and was provided by the Radio
 
 **The notebooks in this GitHub repository will NOT correctly outside of Kaggle. Each notebook contains a link to it's Kaggle counterpart.**
 
-![Mammography scan of a person with a positive diagnosis](Images/positive example.png) ![Mammography scan of a person with a negative diagnosis](Images/negative example.png)
+![Mammography scan of a person with a positive diagnosis](Images/positive_example.png) ![Mammography scan of a person with a negative diagnosis](Images/negative_example.png)
 Above, you can see two example images from the [Kaggle dataset](https://www.kaggle.com/competitions/rsna-breast-cancer-detection/data). The left image is from an individual with a positive breast cancer diagnosis and the image on the right is of a negative diagnosis.
 
 - The dataset contains 54,708 scans from 11,913 patients
@@ -45,9 +45,10 @@ For my first successful model, I used binary crossentropy as the loss function a
 
 ![training curves of first model, charts the model loss and model accuracy](Images/model1_results.png)
 
-In my second model, I attempted to use F1 score as a metric alongside accuracy, as F1 score is generally a better metric for imbalanced datasets and for models where you want to minimize both False Negative and False Positive predictions. 
+In my second model, I attempted to use F1 score as a metric alongside accuracy, as F1 score is generally a better metric for imbalanced datasets and for models where you want to minimize both False Negative and False Positive predictions. This model is incomplete, but could be a great jumping-off point for a continuation of this project
 
 ![F1 = 2 x (precision x recall / (precision + recall))](Images/f1_score.png)
+[source](https://towardsdatascience.com/evaluating-clustering-results-f13552ee7603)
 
 ## Conclusion
 
@@ -60,6 +61,15 @@ The models I build here are just the tip of the iceberg; with more time, resourc
 **The notebooks in this GitHub repository will NOT correctly outside of Kaggle. Each notebook contains a link to it's Kaggle counterpart.**
 To reproduce my results, go to the Kaggle link and click the "Coppy & Edit" button in the top right-hand corner of the page to make your own copy of the notebook with all the relevent input files. You will also need to use the correct "Accelerator", or experiment with a different one! For training, I used GPU P100 and for inference I did not use an accelerator. Version updates can by viewed on Kaggle and not on this GitHub repository.
 
+[My Kaggle page](https://www.kaggle.com/deannahedges) contains several additional scripts that I created through this process, but I have only uploaded into this repository the scripts that contrubuted to my final results.
 
+| File or Folder | Description |
+| --- | ----------- |
+| README.md | This file: an overview and description of the project |
+| Capstone Project Proposal.pdf | Original proposal of this project, includes description, forseen challenges, and reasoning for choosing this project |
+| mammography-challenge-dicom-to-png.ipynb | Script used to convert DICOM images to 256x256 PNGs |
+| mammography-training-model.ipynb | Script used to build first model |
+| mammography-submission.ipynb | Script used for inference on test data and to submit to the Kaggle competition |
+| Images | A folder containing images used in the README |
 
 
