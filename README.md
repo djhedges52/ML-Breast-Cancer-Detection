@@ -59,17 +59,18 @@ The models I build here are just the tip of the iceberg; with more time, resourc
 ## Repository Navigation
 
 **The notebooks in this GitHub repository will NOT correctly outside of Kaggle. Each notebook contains a link to it's Kaggle counterpart.**
-To reproduce my results, go to the Kaggle link and click the "Coppy & Edit" button in the top right-hand corner of the page to make your own copy of the notebook with all the relevent input files. You will also need to use the correct "Accelerator", or experiment with a different one! For training, I used GPU P100 and for inference I did not use an accelerator. Version updates can by viewed on Kaggle and not on this GitHub repository.
+To reproduce my results, go to the Kaggle link and click the "Copy & Edit" button in the top right-hand corner of the page to make your own copy of the notebook with all the relevent input files. You will also need to use the correct "Accelerator", or experiment with a different one! For training, I used GPU P100 and for inference I did not use an accelerator. Version updates can by viewed on Kaggle and not on this GitHub repository.
 
 [My Kaggle page](https://www.kaggle.com/deannahedges) contains several additional scripts that I created through this process, but I have only uploaded into this repository the scripts that contrubuted to my final results.
 
 | File or Folder | Description |
 | --- | ----------- |
 | README.md | This file: an overview and description of the project |
-| Capstone Project Proposal.pdf | Original proposal of this project, includes description, forseen challenges, and reasoning for choosing this project |
+| Predicting Breast Cancer Using Computer Vision.pdf | A PDF version of my final project presentation |
 | mammography-challenge-dicom-to-png.ipynb | Script used to convert DICOM images to 256x256 PNGs |
 | mammography-training-model.ipynb | Script used to build first model |
 | mammography-submission.ipynb | Script used for inference on test data and to submit to the Kaggle competition |
+| Capstone Project Proposal.pdf | Original proposal of this project, includes description, forseen challenges, and reasoning for choosing this project |
 | Images | A folder containing images used in the README |
 
 
